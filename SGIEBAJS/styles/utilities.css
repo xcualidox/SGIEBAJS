@@ -1,0 +1,92 @@
+.container{
+   max-width: 75rem;
+   margin-inline: auto;
+}
+.heading{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.text-center{
+    text-align: center;
+}
+footer{
+    background-color: var(--dark); 
+    color: var(--darker-white);
+    padding: .5rem;
+}
+footer p{
+    opacity: .5;
+    font-size: .8rem;
+}
+.error-msg{
+    color: var(--error);
+    font-size: .75rem;
+    display: none;
+}
+.error-msg-show{
+    display: initial;
+}
+.error-msg-input{
+    border-color: var(--error) !important ;
+}
+.msg-popup{
+    position: absolute;
+    background-color: var(--light-gray);
+    z-index: 100;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,-10%);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+    animation: showMessage .5s ease-in-out 0s 1 normal backwards;
+}
+.msg-popup-active{
+    display: initial !important;
+}
+.msg-popup-close{
+    animation: closeMessage .5s ease-in-out 0s 1 normal backwards !important;
+}
+.msg-popup .close-msg{
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+    cursor: pointer;
+    transition: fill .3s ease-in-out;
+}
+.msg-popup .close-msg:hover{
+    fill: var(--dark) !important;
+}
+.msg-popup .message{
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+    font-size: .9rem;
+   
+}
+/* animations */
+@keyframes showMessage {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes closeMessage {
+	0% {
+		opacity: 1;
+	}
+    100% {
+		opacity: 0;
+	}
+
+	
+}

@@ -1,0 +1,33 @@
+@import url("utilities.css");
+:root{
+    --gray-white:#fafafa;
+    --white: #fff;
+    --darker-white:#f7f7f7;
+    --black: #000;
+    --dark: #020205;
+    --light-gray: hsl(0, 0%, 98%);
+    --gray-violet: hsl(273, 4%, 51%);
+    --color-bg:#e9ecef;
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --light-text:#eee;
+    --opacity: 0 ;
+    --pointer-events: none;
+    --error: rgb(212, 77, 53);
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
